@@ -112,6 +112,8 @@ def mmr(sentences, tfidf_matrix, ranks, sorted_ranks):
 # # `--------------------------------main-----------------------------------
 if __name__ == "__main__":
     st.title("Text Summary Extraction")
+    st.markdown("<hr>", unsafe_allow_html=True)
+    st.subheader("Using Maximal Marginal Relevance")
     # User input options
     input_option = st.radio("Choose an input option:", ("Enter Text", "Upload Text File"))
 

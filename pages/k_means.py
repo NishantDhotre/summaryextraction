@@ -225,7 +225,9 @@ def print_it(selected_sentences):
 # # `--------------------------------main-----------------------------------
 if __name__ == "__main__":
         
-    st.title("Text Extraction Website")
+    st.title("Text Summary Extraction")
+    st.markdown("<hr>", unsafe_allow_html=True)
+    st.subheader("Using K-Means clustering & Bigraph")
     # User input options
     input_option = st.radio("Choose an input option:", ("Enter Text", "Upload Text File"))
 

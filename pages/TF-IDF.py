@@ -97,7 +97,9 @@ def print_it(sorted_ranks):
 #--------------------------------- main ----------------------------------
 
 if __name__ == "__main__":
-    st.title("Text Extraction Website")
+    st.title("Text Summary Extraction")
+    st.markdown("<hr>", unsafe_allow_html=True)
+    st.subheader("Using TF-IDF")
     # User input options
     input_option = st.radio("Choose an input option:", ("Enter Text", "Upload Text File"))
 
