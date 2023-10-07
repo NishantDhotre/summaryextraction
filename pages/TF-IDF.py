@@ -8,9 +8,7 @@ from numpy.linalg import norm
 from collections import Counter
 import streamlit as st
 from io import StringIO
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
+
 # ------------------------------------Task 1`------------------------------
 # removing punctuations
 def preprocessing(sentences):
