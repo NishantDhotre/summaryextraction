@@ -6,4 +6,3 @@ streamlit
 networkx>=3.1
 scipy
 nltk
-nltk.download('punkt')
