@@ -1,4 +1,3 @@
-import networkx as nx
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
@@ -233,14 +232,14 @@ if __name__ == "__main__":
     if input_option == "Enter Text":
         text = st.text_area("Enter your text here:", placeholder="Text.........")
         uploaded_file = None  # No file is uploaded in this case
-        k = st.number_input("enter number of clusters:", value = 4)
+        k = st.number_input("enter number of clusters:", value = 1)
     elif input_option == "Upload Text File":
         uploaded_file = st.file_uploader("Upload a text file (TXT)", type=["txt"])
         if uploaded_file is not None:
             text = uploaded_file.read()
         else:
             text = ""
-        k = st.number_input("enter number of clusters:", value = 4)
+        k = st.number_input("enter number of clusters:", value = 1)
         
     # -----------------------------------
 
