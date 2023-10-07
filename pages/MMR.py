@@ -8,7 +8,9 @@ from numpy.linalg import norm
 from collections import Counter
 import streamlit as st
 from io import StringIO
-
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
 # --------------------------------------------------------------
 def cosine_similarity(x, y):
     return np.dot(x, y) / (norm(x) * norm(y))
