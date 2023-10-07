@@ -9,9 +9,7 @@ import streamlit as st
 from io import StringIO
 from random import sample
 import random
-nltk.download('stopwords')
-nltk.download('punkt')
-nltk.download('wordnet')
+ 
 # --------------------------------------------------------------
 def cosine_similarity(x, y):
     return np.dot(x, y) / (norm(x) * norm(y))
