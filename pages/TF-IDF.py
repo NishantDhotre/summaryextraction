@@ -8,7 +8,6 @@ from numpy.linalg import norm
 from collections import Counter
 import streamlit as st
 from io import StringIO
-from nltk import punkt
 
 # ------------------------------------Task 1`------------------------------
 # removing punctuations
